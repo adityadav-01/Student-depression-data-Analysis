@@ -17,35 +17,11 @@ data <- data %>%
 View(data)
 
 
-
-
-
-
-
-
-
-#--------------------------------------------------------------------------------------------------
-
-# Average and Maximum Total Stress per Degree
-stress_by_degree <- data %>%
-  group_by(Degree) %>%
-  summarise(
-    Average_Stress = mean(Total_Stress, na.rm = TRUE),
-    Max_Stress = max(Total_Stress, na.rm = TRUE),
-    Count = n()
-  ) %>%
-  arrange(desc(Average_Stress))  # Sort by highest average stress
-
-print(stress_by_degree)
-# Average and Maximum Total Stress per Age
-stress_by_age <- data %>%
-  group_by(Age) %>%
-  summarise(
-    Average_Stress = mean(Total_Stress, na.rm = TRUE),
-    Max_Stress = max(Total_Stress, na.rm = TRUE),
-    Count = n()
-  ) %>%
-  arrange(desc(Average_Stress))  # Sort by highest average stress
-
-print(stress_by_age)
-
+# Rename the columns 
+colnames(data) <- c("id", "gender", "age", "city", "profession",
+                    "academic_pressure", "cgpa", "study_satisfaction",
+                    "sleep_duration", "dietary_habits", "degree",
+                    "suicidal_thoughts", "work_study_hours",
+                    "financial_stress", "mental_illness_history",
+                    "depression", "cgpa_group", "depression_status",
+                    "total_stress")
