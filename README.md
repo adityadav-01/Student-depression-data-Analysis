@@ -27,16 +27,20 @@ This project aims to analyze the level of depression among students using R prog
 ## 📁 Project Structure
 
 ```
-📦Student-Depression-Analysis
- ┣ 📂data
- ┃ ┗ 📄student_depression.csv
- ┣ 📂scripts
- ┃ ┣ 📄01_cleaning.R
- ┃ ┣ 📄02_exploration.R
- ┃ ┣ 📄03_visualization.R
- ┃ ┣ 📄04_correlation_anova.R
- ┃ ┗ 📄05_regression_models.R
- ┗ 📄README.md
+📦Student-depression-data-Analysis
+┣ 📂r_script
+┃ ┣ 📄1_cleaning.R
+┃ ┣ 📄2_Analysis.R
+┃ ┣ 📄3_Analysis.R
+┃ ┣ 📄4_Analysis.R
+┃ ┣ 📄5_Analysis.R
+┃ ┣ 📄6_Regression.R
+┃ ┣ 📄7_Correlation.R
+┃ ┗ 📄8_ANOVA.R
+┣ 📄Analyzing_Student_Depression_...
+┣ 📄Depression .pdf
+┣ 📄student depression.csv
+┗ 📄README.md
 ```
 
 ## 📌 Key Insights
